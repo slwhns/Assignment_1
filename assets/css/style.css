@@ -64,6 +64,11 @@ h2 {
     font-weight: normal;
 }
 
+h3 {
+    line-height: 2rem;
+    font-weight: normal;
+}
+
 .col-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -146,6 +151,16 @@ h2 {
     font-size: 1rem;
 }
 
+.header h3 {
+    font-size: 1rem;
+    padding: 1px 5px;
+    background-color: #0c2766;
+    border: none;
+    border-radius: 20px;
+    text-align:center;
+    margin: 10px;
+}
+
 .socials {
     margin: 20px;
 }
@@ -159,24 +174,6 @@ h2 {
 
 .socials a:hover {
     color: var(--accent-color);
-    transition: 0.2s linear;
-    transition-property: background-color, color;
-}
-
-.header .cta {
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0.274);
-    padding: 10px 20px;
-    margin: 50px 0;
-    border-radius: 30px;
-    transition: 0.2s linear;
-    transition-property: background-color, color;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
-}
-
-.header .cta:hover {
-    color: var(--accent-color);
-    background-color: #ced4e0;
     transition: 0.2s linear;
     transition-property: background-color, color;
 }
@@ -230,6 +227,18 @@ h2 {
     margin: 0;
 }
 
+.malay {
+    width: 100%;
+}
+
+.english {
+    width: 75%;
+}
+
+.japan {
+    width: 50%;
+}
+
 .bar {
     background: rgba(0, 0, 0, 0.1);
     display: block;
@@ -244,27 +253,109 @@ h2 {
     background: var(--accent-color);
 }
 
-.bangla {
+/*=============== EXPERIENCE SECTION ===============*/
+
+.timeline {
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    top: 55px;
+    height: calc(100% - 100px);
+    background-color: var(--accent-color);
+    z-index: 100;
+}
+
+.timeline-date {
+    position: relative;
+}
+
+.timeline-date::before {
+    content: "";
+    position: absolute;
+    background-color: var(--accent-color);
+    left: -25px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.timeline-items {
+    margin-left: 20px;
+}
+
+.timeline-item {
+    margin: 50px 0;
+}
+
+/*=============== SKILLS SECTION ===============*/
+
+.skills {
     width: 100%;
+    margin: 20px;
 }
 
-.english {
-    width: 75%;
-}
-
-.chinese {
-    width: 50%;
+.skill-item {
+    width: 100%;
+    margin: 20px;
+    position: relative;
 }
 
 .skill {
-    background-color: var(--accent-color);
-    color: #fff;
-    line-height: 35px;
-    padding: 5px 10px;
-    border-radius: 15px;
+    margin-bottom: 15px;
 }
 
-/*=============== PROJECTS SECTION ===============*/
+.skill p {
+    margin: 20px;
+}
+
+.bar {
+    background: rgba(0, 0, 0, 0.1);
+    display: block;
+    height: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar span {
+    height: 8px;
+    float: left;
+    background: var(--accent-color);
+}
+
+.html {
+    width: 80%;
+}
+
+.css {
+    width: 75%;
+}
+
+.javascript {
+    width: 60%;
+}
+
+.sql {
+    width: 65%;
+}
+
+.phyton {
+    width: 87%;
+}
+
+.figma {
+    width: 50%;
+}
+
+.mysql {
+    width: 70%;
+}
+
+/*=============== INVOLVEMENT SECTION ===============*/
 
 .project-list {
     margin: 20px 0;
@@ -324,45 +415,6 @@ h2 {
     left: 0;
     cursor: pointer;
     transition: 0.5s ease;
-}
-
-/*=============== EXPERIENCE SECTION ===============*/
-
-.timeline {
-    position: relative;
-}
-
-.timeline::before {
-    content: "";
-    position: absolute;
-    width: 2px;
-    top: 55px;
-    height: calc(100% - 100px);
-    background-color: var(--accent-color);
-    z-index: 100;
-}
-
-.timeline-date {
-    position: relative;
-}
-
-.timeline-date::before {
-    content: "";
-    position: absolute;
-    background-color: var(--accent-color);
-    left: -25px;
-    top: 5px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-}
-
-.timeline-items {
-    margin-left: 20px;
-}
-
-.timeline-item {
-    margin: 50px 0;
 }
 
 /*=============== FORM ===============*/
@@ -431,6 +483,18 @@ textarea {
     transition: 0.2s linear;
     transition-property: background-color, color;
     cursor: pointer;
+}
+
+.success-message {
+    display: none;
+    background-color: #037c1f;
+    padding: 10px;
+    margin-top: 10px 0;
+    color:aliceblue;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 30px;
+    text-align: center;
 }
 
 /*=============== MEDIA QUERY ===============*/
