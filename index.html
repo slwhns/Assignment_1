@@ -21,6 +21,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <nav id="navbar" class="navbar"><a href="#"></a></nav>
 
+    <!-- Toggle Dark/Light Mode -->
+    <button id="toggle-mode">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+    </button>
+
     <div class="container">
         <!-- Navigation Menu -->
          <div class="menu">
@@ -245,49 +250,80 @@
                     <h1>My Interests</h1>
                     <div class="interest-grid">
                         <div class="interest-item">
-                            <img src="assets/img/travel.jpg" alt="Traveling"/>
                             <h3>Traveling</h3>
+                            <div class="travel-carousel">
+                                <div class="carousel-images">
+                                    <img src="assets/img/travel.jpg" alt="Traveling 1"/>
+                                    <img src="assets/img/travel2.jpg" alt="Traveling 2"/>
+                                    <img src="assets/img/travel3.jpg" alt="Traveling 3"/>
+                                </div>
+                                <button class="prev">&#10094</button>
+                                <button class="next">&#10095</button>
+                            </div>
                             <p>I love exploring new cultures and meeting new people.</p>
                         </div>
 
                         <div class="interest-item">
-                            <img src="assets/img/music.jpg" alt="Music"/>
                             <h3>Listen to Music</h3>
+                            <div class="music-carousel">
+                                <div class="carousel-images">
+                                    <img src="assets/img/music.jpg" alt="Music 1"/>
+                                    <img src="assets/img/music2.jpg" alt="Music 2"/>
+                                    <img src="assets/img/music3.jpg" alt="Music 3"/>
+                                </div>
+                                <button class="prev">&#10094</button>
+                                <button class="next">&#10095</button>
+                            </div>
                             <p>Find peace, energy, and inspiration in the rhythm of song.</p>
                         </div>
 
                         <div class="interest-item">
-                            <img src="assets/img/hiking.jpg" alt="Hiking" />
                             <h3>Hiking</h3>
+                            <div class="hiking-carousel">
+                                <div class="carousel-images">
+                                    <img src="assets/img/hiking.jpg" alt="Hiking 1"/>
+                                    <img src="assets/img/hiking2.jpg" alt="Hiking 2"/>
+                                    <img src="assets/img/hiking3.jpg" alt="Hiking 3"/>
+                                </div>
+                                <button class="prev">&#10094</button>
+                                <button class="next">&#10095</button>
+                            </div>
                             <p>I love to embark on adventure as a journey where the experience is the reward.</p>
                         </div>
 
                         <div class="interest-item">
-                            <img src="assets/img/photography.jpg" alt="Photography" />
                             <h3>Photography</h3>
+                            <div class="photography-carousel">
+                                <div class="carousel-images">
+                                    <img src="assets/img/photography.jpg" alt="Photography 1"/>
+                                    <img src="assets/img/photography2.jpg" alt="Photography 2"/>
+                                    <img src="assets/img/photography3.jpg" alt="Photography 3"/>
+                                </div>
+                                <button class="prev">&#10094</button>
+                                <button class="next">&#10095</button>
+                            </div>
                             <p>Capturing moments and telling stories through images.</p>
                         </div>
                     </div>
                 </section>
                 <!-- End of Interest Section -->
 
-                <!-- Contact Section -->
+                <!-- Contact Form Section -->
                 <section class="content-card contact" id="contact">
                     <h1>Contact</h1>
                     <form class="form" id="form" action="#">
 
                         <div class="input-box">
-                            <input type="text" class="text-input" name="name" placeholder="Name" />
+                            <input type="text" class="text-input" name="name" placeholder="Name" required />
                         </div>
                         <div class="input-box">
-                            <input type="email" class="text-input" name="email" id="email" placeholder="Email" />
+                            <input type="email" class="text-input" name="email" id="email" placeholder="Email" required />
                         </div>
                         <div class="input-box">
-                            <input type="subject" class="text-input" name="subject" id="subject"
-                                placeholder="Subject" />
+                            <input type="subject" class="text-input" name="subject" id="subject" placeholder="Subject" required />
                         </div>
                         <div class="input-box">
-                            <textarea name="text" class="message" placeholder="Message..."></textarea>
+                            <textarea name="text" class="message" placeholder="Message..." required></textarea>
                         </div>
                         <div class="input-box">
                             <input type="submit" class="submit-btn" id="submit" value="submit" />
