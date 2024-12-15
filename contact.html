@@ -39,38 +39,41 @@
         </div>
         <!-- End of Navigation Menu -->
 
-        <!-- Main -->
-        <div class="portfolio">
+<!-- Contact Section -->
+        <div class="content">
+            <section class="content-card contact" id="contact">
+                <h1>Contact</h1>
+                <form class="form" id="form" action="#">
 
-            <!-- Header Section -->
-            <section class="header">
-                <img class="header-img"
-                    src="assets/img/profile-img.png"
-                    alt="" />
-                <h1>Salwa Hanis</h1>
-                <h2>Software Engineering's student</h2>
-                <div class="socials">
-                    <a href="#" target="_blank" class="fa-brands fa-linkedin-in fa-bounce" id="profile-link"></a>
-                    <a href="#" target="_blank" class="fa-brands fa-github fa-bounce"></a>
-                    <a href="#" target="_blank" class="fa-brands fa-wordpress fa-bounce"></a>
-                    <a href="#" target="_blank" class="fa-brands fa-strava fa-bounce"></a>
-                </div>
-                <h3>DTD3033: Database Driven Web Programming</h3>
+                    <div class="input-box">
+                        <input type="text" class="text-input" name="name" placeholder="Name" required />
+                    </div>
+                    <div class="input-box">
+                        <input type="email" class="text-input" name="email" id="email" placeholder="Email" required />
+                    </div>
+                    <div class="input-box">
+                        <input type="subject" class="text-input" name="subject" id="subject" placeholder="Subject" required />
+                    </div>
+                    <div class="input-box">
+                        <textarea name="text" class="message" placeholder="Message..." required></textarea>
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" class="submit-btn" id="submit" value="submit" />
+                    </div>
+
+                    <div class="success-message" id="success-message" style="display: none;">
+                        Your message has been sent. Thankyou!
+                    </div>
+                </form>
             </section>
-            <!-- End of Header Section -->
-
-            <!-- Content Section -->
-            <div class="content">
-
-                <!-- Home Section -->
-                <section class="content-card home" id="welcome-section">
-                    <h1>Hello, I am Salwa Hanis</h1>
-                </section>
-                <!-- End of Home Section -->
-            </div>
+            <!-- End of Contact Section -->
+        </div>
+    </div>
 
         <!--JS File -->
         <script src="assets/js/script.js"></script>
 
-</body>
-</html>
+    </body>
+    </html>
+
+                

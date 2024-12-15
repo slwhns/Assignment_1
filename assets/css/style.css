@@ -12,29 +12,6 @@
     --border-radius: 30px;
 }
 
-/*=============== TOGGLE DARK/LIGHT MODE ===============*/
-.dark-mode {
-    background-color: #121212;
-}
-
-/*=============== TOGGLE DARK/LIGHT ICON ===============*/
-#toggle-mode {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 2rem;
-    color: var(--light-grey);
-    z-index: 1000;
-    transition: color 0.3s ease;
-}
-
-#toggle-mode:hover {
-    color: #fff;
-}
-
 /*=============== SCROLLBAR ===============*/
 
 ::-webkit-scrollbar {
@@ -52,17 +29,6 @@
 
 .content:hover::-webkit-scrollbar-thumb {
     background: var(--light-grey);
-}
-
-/*=============== SCROLL TO TOP ===============*/
-#scrollToTop {
-    background-color: #0c2766;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
 }
 
 /*=============== BASE ===============*/
@@ -217,8 +183,8 @@ h3 {
 .content {
     border-radius: var(--border-radius);
     background: white;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: auto;
     overflow: auto;
     scroll-behavior: smooth;
 }
@@ -229,7 +195,7 @@ h3 {
     align-items: center;
     justify-content: center;
     min-height: 100%;
-    margin: 0 50px;
+    margin: 0 20px;
 }
 
 /*=============== HOME SECTION ===============*/
@@ -475,68 +441,6 @@ h3 {
     width: 100%;
     height: auto;
     border-radius: 10px;
-}
-
-/*=============== CAROUSEL IMAGES ===============*/
-.interest-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.interest-item {
-    position: relative;
-    flex: 1 1 300px;
-}
-
-.carousel-images {
-    display: flex;
-    width: 100%;
-    transition: transform 0.5s ease;
-    overflow: hidden;
-}
-
-.carousel-images img {
-    min-width: 100%; 
-    height: auto;
-    border-radius: var(--border-radius);
-    flex-shrink: 0;
-}
-
-.carousel-images img:not(:first-child) {
-    opacity: 0;
-}
-
-.carousel-images img.active {
-    opacity: 1;
-}
-
-.button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 5px;
-    z-index: 10;
-    font-size: 24px;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-/* Additional styles for responsiveness */
-@media screen and (max-width: 750px) {
-    .carousel-images img {
-        min-width: 100%;
-    }
 }
 
 /*=============== FORM ===============*/
